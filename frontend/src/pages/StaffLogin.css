@@ -1,0 +1,315 @@
+.auth-viewport {
+  min-height: 100vh;
+  width: 100%;
+  background: #0B0E13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.light-haze {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  pointer-events: none;
+}
+
+.haze-one {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.02) 65%);
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.haze-two {
+  width: 380px;
+  height: 380px;
+  background: rgba(255, 255, 255, 0.04);
+  bottom: -90px;
+  right: 18%;
+}
+
+.auth-stage {
+  width: 100%;
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+.auth-nav-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.auth-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #94A3B8;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-back-btn:hover {
+  color: #FFFFFF;
+  transform: translateX(-3px);
+}
+
+.gate-tag {
+  font-size: 0.72rem;
+  color: #64748B;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.frosted-glass-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(36px);
+  -webkit-backdrop-filter: blur(36px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.26);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  padding: 44px 38px;
+  box-shadow: 
+    0 32px 64px -20px rgba(0, 0, 0, 0.85),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.glass-top-edge {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  pointer-events: none;
+}
+
+.auth-headline-block {
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shield-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.auth-headline-block h2 {
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: #F8FAFC;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px 0;
+}
+
+.auth-headline-block p {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.auth-alert {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #E2E8F0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-stack-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.auth-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.split-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sent-to-label {
+  font-size: 0.76rem;
+  color: #94A3B8;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #CBD5E1;
+  letter-spacing: 0.01em;
+}
+
+.auth-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-adornment {
+  position: absolute;
+  left: 14px;
+  color: #64748B;
+  pointer-events: none;
+}
+
+.auth-field-wrapper input {
+  padding-left: 44px;
+}
+
+input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+  padding: 13px 16px;
+  color: #FFFFFF;
+  font-size: 0.92rem;
+  outline: none;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+input[type="email"]:focus {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.otp-boxes-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.otp-box-cell {
+  width: 52px;
+  height: 56px;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.otp-box-cell:focus {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.auth-btn-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  background: #FFFFFF;
+  color: #0B0E13;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
+  transition: all 0.25s ease;
+}
+
+.auth-btn-solid:hover:not(:disabled) {
+  background: #E2E8F0;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(255, 255, 255, 0.22);
+}
+
+.auth-btn-solid:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.auth-alt-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.resend-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #94A3B8;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.resend-trigger:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 520px) {
+  .frosted-glass-box {
+    padding: 32px 22px;
+  }
+  .otp-box-cell {
+    width: 44px;
+    height: 48px;
+    font-size: 1.15rem;
+  }
+}

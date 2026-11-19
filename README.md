@@ -1,4 +1,4 @@
-# AI Support Ticket Triage & Classification Systems
+# AI Support Ticket Triage & Classification System
 
 An enterprise-grade intelligent support operations platform featuring deep learning text classification, automated priority scoring, spam defense screening, and real-time queue management.
 
